@@ -1,0 +1,16 @@
+.header {
+  background: $primaryColor;
+  padding: 40px 0;
+
+  a {
+    color: $white;
+    text-decoration: none;
+    padding: 10px 20px;
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+  a.router-link-active {
+    color: $secondaryColor;
+  }
+}

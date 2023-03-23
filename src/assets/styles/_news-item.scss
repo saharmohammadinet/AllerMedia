@@ -1,0 +1,114 @@
+.news-item {
+  width: 48%;
+  box-shadow: 0px 0px 10px #a29f9ffa;
+  padding: 0;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  transition: all 0.4s;
+
+  &:hover {
+    box-shadow: 0px 0px 18px #a29f9ffa;
+  }
+
+  .img-box {
+    width: 100%;
+    height: 300px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px 20px 0 0;
+    }
+  }
+  .content {
+    padding: 0px 30px 30px;
+    .link-box {
+      display: block;
+      color: black;
+      text-decoration: none;
+      transition: all 0.4s;
+      &:hover {
+        color: $secondaryColor;
+      }
+      h2 {
+        font-size: 1.25rem;
+        font-weight: 500;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .meta {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .author {
+        padding-bottom: 10px;
+        span {
+          text-transform: capitalize;
+          color: $secondaryColor;
+        }
+      }
+      .score {
+        color: $secondaryColor;
+        font-weight: bold;
+        text-align: center;
+        small {
+          display: block;
+        }
+      }
+      .date-publish {
+        position: relative;
+        padding-left: 20px;
+        padding-bottom: 15px;
+        width: 100%;
+        &:before {
+          width: 16px;
+          height: 16px;
+          position: absolute;
+          content: "";
+          background: url("../images/calendar.png");
+          background-size: contain;
+          top: 2px;
+          left: 0px;
+        }
+      }
+      .read-more {
+        font-size: 14px;
+        background: $secondaryColor;
+        border-radius: 10px;
+        color: $white;
+        text-decoration: none;
+        padding: 9px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .img-box {
+      height: 200px;
+    }
+    .content {
+      padding: 0px 10px 30px;
+      h2 {
+        font-size: 1rem;
+      }
+      .meta {
+        flex-wrap: wrap;
+        .author {
+          width: 100%;
+        }
+        .score {
+          padding-bottom: 10px;
+          small {
+            display: inline-block;
+            padding-left: 4px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 565px) {
+    width: 100%;
+  }
+}
