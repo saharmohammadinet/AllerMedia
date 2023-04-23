@@ -25,11 +25,6 @@
         should write more than 3 characters.
       </p>
 
-      <p>
-        Besides this project, I would like to implement this project in Nuxt and
-        also add some tests test but as I talked to Anna, I was sick and didn't
-        have time to do more.
-      </p>
       <p>I'm looking forward to get your feedbacks 😊.</p>
       <p>Best Regards <br />Sahar</p>
     </div>
