@@ -1,6 +1,6 @@
 # Hacker news
 
-Coding challenge from Merkle
+Coding challenge from TrafficLab
 
 ## Setup
 
